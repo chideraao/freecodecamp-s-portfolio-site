@@ -88,14 +88,62 @@ nav li {
 #welcome-section {
 	padding-bottom: 12rem;
 }
+
 #projects {
-	height: 7rem;
+	background-color: var(--secondary-color);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #projects h2 {
 	text-align: center;
 	padding-bottom: 3rem;
 }
 .project-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.project-title a {
+	padding: 2rem;
+	text-align: justify;
+	margin: 2rem;
+	border: 1px solid var(--tetiary-color);
+}
+
+#contact {
+	background-color: var(--primary-color);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 2px solid var(--last-color);
+}
+#socials a {
+	padding: 1rem;
+}
+
+footer {
+	height: 7rem;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 2fr 1fr;
+}
+#disclaimer {
+	display: flex;
+	align-items: flex-start;
+	padding-top: 2rem;
+}
+#copyright {
+	padding-left: 4rem;
+	padding-top: 2rem;
+}
+@media (min-width: 768px) {
+	nav {
+		position: fixed;
+		top: 0;
+		min-width: 100vw;
+		z-index: 999;
+	}
 }
